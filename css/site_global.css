@@ -83,12 +83,6 @@ a:active {
     text-decoration: inherit;
 }
 
-.nontext {
-    color: black;
-    text-decoration: none;
-    font-style: normal;
-    font-weight: normal;
-}
 
 .colelem {
     display: inline;

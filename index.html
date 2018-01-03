@@ -1,56 +1,54 @@
 <!DOCTYPE html>
-<html class="html css_verticalspacer">
-
-<head>
+<html class="html">
+  <head>
     <title>Iakeri Project</title>
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="/css/site_global.css" />
-    <link rel="stylesheet" type="text/css" href="/css/index.css" />
-    <link rel="stylesheet" href="css/video.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/index.css' type='text/css' />
 
-<body>
+  </head>
+  <body>
 
-<!--
-    <video poster="content/poster.jpg" id="bgvid" playsinline autoplay muted>
-        <source src="content/10s.webm" type="video/webm">
-        <source src="content/10s.mp4" type="video/mp4">
-    </video>
--->
-
-    <div class="video-background">
+    <div class="video-background" id="video">
         <div class="video-foreground">
             <iframe src="https://www.youtube.com/embed/YCfKih303Dc?version=3&start=0&end=30&controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=YCfKih303Dc" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+    <div class="row">
+        <div class="col-8">
+          <div class="row">
+            <div class="col-5">
+              <p class="presp3"><a href="index.html">I A K E R I &nbsp &nbsp P R O J E C T</a></p>
+              <p>P A R I S , &nbsp &nbspF R A N C E</p>
+              <p>&nbsp;</p>
+              <p>/</p>
+              <p ><a href="original.html">W O R K S</a></p>
+              <p>&nbsp;</p>
+              <p class="pp">//</p>
+              <p><a href="showcase/genderdata.html">S H O W C A S E</a></p>
+              <p><a href="showcase/genderdata.html">I N T E R A C T I V E</a></p>
+              <p>&nbsp;</p>
+              <p>///</p>
+              <p><a href="aboutme.html">A B O U T</a></p>
+            </div>
         </div>
-    </div>
+      </div>
     </div>
 
-<!--
-    <div class="clearfix" id="page">
-    <div class="clearfix grpelem" id="pu">
-        <img class="block" src="/images/trois_vues.jpg"/>
-    </div>
-   </div>
--->
-
-    <div class="clearfix" id="menu">
-        <!-- content -->
-        <p id="u-3"><a href="index.html">I A K E R I &nbsp &nbsp P R O J E C T</a></p>
-        <p id="u-5">P A R I S , &nbsp &nbspF R A N C E</p>
-        <p id="u-6">&nbsp;</p>
-        <p id="u-8">/</p>
-        <p id="u-11"><a href="original.html">W O R K S</a></p>
-        <p id="u-15">&nbsp;</p>
-        <p id="u-17">//</p>
-        <p id="u-20"><a href="showcase/genderdata.html">S H O W C A S E</a></p>
-        <p id="u-20"><a href="showcase/genderdata.html">I N T E R A C T I V E</a></p>
-        <p id="u-27">&nbsp;</p>
-        <p id="u-29">///</p>
-        <p id="u-32"><a href="aboutme.html">A B O U T</a></p>
-    </div>
-    </div>
-</body>
-
+    <script src='js/jquery.min.js'></script>
+    <script>
+    $( document ).ready(function() {
+        var window_width = $(window).width();
+        var x = document.getElementById("video");
+        if (window_width < 768) {
+              x.className = "video-background-resp";
+          } else {
+              x.className = "video-background";
+          }
+    });
+    </script>
+  </body>
 </html>

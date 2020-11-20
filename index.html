@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="html">
+
+<head>
+    <title>Iakeri Project</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/index.css' type='text/css' />
+</head>
+
+<body>
+    <div class="video-background" id="video"> 
+        <div class="video-foreground">
+            <iframe src="https://www.youtube.com/embed/bO3eLbU-0KM?version=3&start=5&end=36&controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=bO3eLbU-0KM" frameborder="0" allowfullscreen></iframe>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-5">
+                    <p class="presp3"><a href="index.html">C O L L E C T I F &nbsp &nbsp I A K E R I</a></p>
+                    <p>P A R I S , &nbsp &nbspF R A N C E</p>
+                    <p>&nbsp;</p>
+                    <p><a href="en/index_en.html"> \ &nbsp; E N T E R  </a></p>
+                    <p>&nbsp;</p>
+                    <p><a href="fr/index_fr.html"> / &nbsp; E N T R E R  </a></p>
+                    <p>&nbsp;</p>
+                    <p><a href="es/index_es.html"> \ &nbsp; E N T R A R  </a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='js/jquery.min.js'></script>
+    <script>
+    $(document).ready(function() {
+        var window_width = $(window).width();
+        var x = document.getElementById("video");
+        if (window_width < 768) {
+            x.className = "video-background-resp";
+        } else {
+            x.className = "video-background";
+        }
+    });
+    </script>
+</body>
+
+</html>
